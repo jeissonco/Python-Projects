@@ -6,14 +6,6 @@ import os
 @Author: Jeisson Nino
 date: June 2024
 
-This program merges two PDF files into one, rotates a page, encrypts the file, and decrypts the file.
-
-1.	Write a Python program that provides the ability to: 
-1.1.	Merge at least two PDF files into one. Use list data structure with at least two PDF files. As an optional bonus you can create an empty list and ask for user input to populate empty list with user defined PDF files.
-1.2.	Rotate a page in PDF file.
-1.3.	Encrypt PDF file.
-1.4.	Decrypt PDF file.
-
 '''
 #----------------------------- FUNCTIONS ----------------------------
 #Merging the pdf files
@@ -39,11 +31,6 @@ def merge_pdfs():
     
     reader = PdfReader(new_pdf +'.pdf')
     num_pages = len(reader.pages)
-    for num in range(num_pages):
-        page = reader.pages[num]
-        text = page.extract_text()
-        print(f'------------------------------- PAGE {num+1}-----------------------------')
-        print(text,'\n')
 
         
 #----------------------------------------------------------------
